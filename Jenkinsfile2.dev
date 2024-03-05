@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Open CMD') {
+            steps {
+                // Usando 'bat' para abrir un símbolo del sistema en Windows
+                bat 'cmd'
+            }
+        }
+    }
+}
